@@ -23,6 +23,9 @@ git push -u origin Dockerfile
 git checkout main
 git pull origin main
 git merge Dockerfile
-docker build -t week_11_k8s_test .
-docker run -p 8501:8501 week_11_k8s_test
+docker build -t refaelsaidov1/week_11_k8s_test:0.0.1 .
+docker run -d --name str-app  -p 8080:8080 refaelsaidov1/week_11_k8s_test:0.0.1
 http://localhost:8501
+
+
+

@@ -5,9 +5,9 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: streamlit-deployment
+    app: streamlit
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8501
+      targetPort: 8080
       nodePort: 30001

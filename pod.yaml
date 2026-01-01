@@ -3,10 +3,10 @@ kind: Pod
 metadata:
   name: streamlit-pod
   labels:
-    app: streamlit-pod
+    app: streamlit
 spec:
   containers:
     - name: streamlit
-      image: streamlit-app:latest
+      image: refaelsaidov1/week_11_k8s_test:0.0.1
       ports:
-        - containerPort: 8501
+        - containerPort: 8080
