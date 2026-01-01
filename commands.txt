@@ -1,0 +1,28 @@
+git checkout -b service
+git add .
+git commit -m "add service"
+git push -u origin service
+git checkout main
+git pull origin main
+git merge service
+kubectl apply -f service.yaml
+
+git checkout -b pod
+git add .
+git commit -m "add pod"
+git push -u origin pod
+git checkout main
+git pull origin main
+git merge pod
+git checkout -b Dockerfile
+kubectl apply -f pod.yaml
+
+git add .
+git commit -m "add Dockerfile"
+git push -u origin Dockerfile
+git checkout main
+git pull origin main
+git merge Dockerfile
+docker build -t week_11_k8s_test .
+docker run -p 8501:8501 week_11_k8s_test
+http://localhost:8501
