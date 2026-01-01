@@ -1,0 +1,1 @@
+This file: Connection pods that they will communicate with. The IP address of the pods can change because they are unstable. They need to be restarted, so the service gives the pods a stable IP and access to the pod with its name because it has an internal DNS.
