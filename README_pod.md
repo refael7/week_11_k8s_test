@@ -1,6 +1,2 @@
-git checkout -b pod
-git add .
-git commit -m "add pod"
-git push -u origin pod
-git checkout main
-git pull origin main
+version kind of yaml name in the spec: the name of container and the image and the ports
+
