@@ -7,6 +7,6 @@
   שביעית: ציין פקודות להפעלה ב-cmd
 
 
-docker build -t streamlit-app .
-docker run -p 8501:8501 streamlit-app
+docker build -t week_11_k8s_test .
+docker run -p 8501:8501 week_11_k8s_test
 http://localhost:8501
