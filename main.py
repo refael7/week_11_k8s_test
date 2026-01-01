@@ -38,6 +38,3 @@ map_data = pd.DataFrame(
     columns=['latitude', 'longitude']
 )
 st.map(map_data)
-
-
-
